@@ -46,7 +46,6 @@ public class feedAdapter extends ArrayAdapter<shortfeed> {
 
             convertView=inflater.inflate(Resource,null);
             viewHolder=new ViewHolder();
-            viewHolder.imageView=(ImageView) convertView.findViewById(R.id.fImage);
             viewHolder.Name=(TextView)convertView.findViewById(R.id.fAuthor);
             viewHolder.Title=(TextView)convertView.findViewById(R.id.fTitle);
             viewHolder.Location=(TextView)convertView.findViewById(R.id.fLocation);
@@ -64,7 +63,6 @@ public class feedAdapter extends ArrayAdapter<shortfeed> {
         viewHolder.Location.setText(mfeeds.get(position).getLocation());
         viewHolder.Name.setText(mfeeds.get(position).getName());
         viewHolder.seeMore.setText(mfeeds.get(position).getId());
-        viewHolder.imageView.setImageBitmap(mfeeds.get(position).getBitImage());
         return convertView;
     }
 
@@ -72,7 +70,6 @@ public class feedAdapter extends ArrayAdapter<shortfeed> {
 
 
     static class ViewHolder{
-        public ImageView imageView;
         public TextView Name;
         public TextView Location;
         public  TextView seeMore;

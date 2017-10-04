@@ -57,10 +57,10 @@
         android:text="Problem Title"
         android:textAlignment="center"/>
 
-
-    <com.google.android.gms.maps.MapView android:id="@+id/dmap"
-        android:layout_width="fill_parent"
-        android:layout_height="300dp" />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/wb"></WebView>
 
     </LinearLayout>
 

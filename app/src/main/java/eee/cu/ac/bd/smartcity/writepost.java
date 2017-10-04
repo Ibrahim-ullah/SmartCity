@@ -157,7 +157,7 @@ public class writepost extends AppCompatActivity {
                         params.put("description",getDescription);
                         params.put("latitude", getLatitude);
                         params.put("longitude", getLongitude);
-                        params.put("imgData",test);
+                        params.put("imgData","No no Image");
                         return params;
                     }
                 };

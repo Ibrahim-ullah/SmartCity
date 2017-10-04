@@ -10,6 +10,7 @@ import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,6 +45,7 @@ public class details extends AppCompatActivity {
     private GoogleMap mMap;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +54,7 @@ public class details extends AppCompatActivity {
         final String Id = extra.getString("id");
         final int fint = Integer.parseInt(Id);
 
-
+        final WebView wb=(WebView)findViewById(R.id.wb);
         final TextView name = (TextView) findViewById(R.id.dname);
         final TextView location = (TextView) findViewById(R.id.Dlo);
         final TextView description = (TextView) findViewById(R.id.ddescription);
@@ -92,6 +94,7 @@ public class details extends AppCompatActivity {
                                             title.setText(Title);
                                             latlong.setText(La + ", " + Lo);
 
+                                            wb.loadUrl("http://maps.googleapis.com/maps/api/staticmap?zoom=15&size=400x300&maptype=roadmap&markers=color:red|"+La+","+Lo);
                                             loading.dismiss();
                                             Log.v("Got Values", Name);
                                         } else {

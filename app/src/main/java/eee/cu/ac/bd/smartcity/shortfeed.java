@@ -16,8 +16,6 @@ public class shortfeed {
     private String Name;
     private String Location;
     private String id;
-    Bitmap bitImage;
-
 
     public shortfeed(){
 
@@ -51,14 +49,6 @@ public class shortfeed {
     }
 
 
-
-    public Bitmap getBitImage() {
-        return bitImage;
-    }
-
-    public void setBitImage(Bitmap bitImage) {
-        this.bitImage = bitImage;
-    }
 
     public String getId() {
         return id;

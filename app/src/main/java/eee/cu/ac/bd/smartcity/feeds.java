@@ -74,15 +74,9 @@ public class feeds extends AppCompatActivity {
                                 f.setTitle(feed.getString("issue"));
                                 f.setId(feed.getString("id"));
 
-                                String imgs=feed.getString("imagedata");
-                               Bitmap bitImage=dbBitmapUtility.StringToBitMap(imgs);
-                                f.setBitImage(bitImage);
 
                                 feedlist.add(f);
 
-                                Log.v("Image: ", String.valueOf(bitImage));
-
-                                Log.v("ImageString: ",imgs);
 
                                 feedAdapter adapter=new feedAdapter(getApplicationContext(),R.layout.feedlist,feedlist);
                                 list.setAdapter(adapter);

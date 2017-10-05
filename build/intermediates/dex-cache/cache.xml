@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="db2fa211c0879daf80862a2daecb8a5561254b6c">
+        sha1="6d28a804549ada52988ab970f51b1ce402561923">
         <dex dex="/home/mahbub/AndroidStudioProjects/SmartCity/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_9e333221a29297a42045f0a3a43ee993c3a6141d/classes.dex" />
     </item>
 

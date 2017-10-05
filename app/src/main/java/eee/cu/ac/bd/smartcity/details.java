@@ -79,10 +79,10 @@ public class details extends AppCompatActivity {
                                         JSONObject feed = feedjson.getJSONObject(i);
 
                                         if (Integer.parseInt(feed.getString("id")) == fint) {
-                                            Name = feed.getString("name");
-                                            Location = feed.getString("location");
-                                            Description = feed.getString("description");
-                                            Latitude = feed.getDouble("latitude");
+                                            Name = "Problem posted by" +"       " + feed.getString("name");
+                                            Location = "Location is" +"     " + feed.getString("location");
+                                            Description = "Description:" + feed.getString("description");
+                                            Latitude = + feed.getDouble("latitude");
                                             Longitude = feed.getDouble("longitude");
                                             La = feed.getString("latitude");
                                             Lo = feed.getString("longitude");
